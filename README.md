@@ -10,6 +10,6 @@
 ### Use insmod for hello1.ko and hello2.ko without parameters 
 ![](https://github.com/Threadripper1/Lab5-AK2/blob/main/images/image_2020-12-10_15-58-57.png)
 ### Use insmod for hello1.ko and hello2.ko with parameters which equals (5, 10, 100)
-![](https://github.com/Threadripper1/Lab5-AK2/blob/main/images/image_2020-12-10_15-58-57.png)
+![](https://github.com/Threadripper1/Lab5-AK2/blob/main/images/image_2020-12-10_15-59-11.png)
 ### Use hello2.ko without hello1.ko
 ![](https://github.com/Threadripper1/Lab5-AK2/blob/main/images/image.png)
