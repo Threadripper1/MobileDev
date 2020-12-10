@@ -1,0 +1,1 @@
+cmd_/home/dimon/Advanced/hello1.ko := ccache arm-eabi-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/dimon/Advanced/hello1.ko /home/dimon/Advanced/hello1.o /home/dimon/Advanced/hello1.mod.o ;  true
