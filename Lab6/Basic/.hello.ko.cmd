@@ -1,1 +1,0 @@
-cmd_/home/dimon/Lab6/Basic/hello.ko := ccache arm-eabi-ld -r  -EL -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/dimon/Lab6/Basic/hello.ko /home/dimon/Lab6/Basic/hello.o /home/dimon/Lab6/Basic/hello.mod.o ;  true
