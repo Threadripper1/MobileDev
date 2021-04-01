@@ -56,7 +56,6 @@ public class ChartsFragment extends Fragment implements RadioGroup.OnCheckedChan
 
         pieChart = view.findViewById(R.id.pie_chart);
         pieChart.setNoDataText("Select type of diagram on the button");
-
         return view;
     }
 
@@ -110,7 +109,6 @@ public class ChartsFragment extends Fragment implements RadioGroup.OnCheckedChan
         }
         return dataSet;
     }
-
 
     private ArrayList<PieEntry> loadPieData(float ... percents){
         ArrayList<PieEntry> pieDataSet = new ArrayList<>();
