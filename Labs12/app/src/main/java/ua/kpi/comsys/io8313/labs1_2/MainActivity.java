@@ -8,6 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 
 
+import ua.kpi.comsys.io8313.labs1_2.parts.BooksFragment;
 import ua.kpi.comsys.io8313.labs1_2.parts.PieAndGraphFragment;
 import ua.kpi.comsys.io8313.labs1_2.tabs.ViewPageAdapter;
 import ua.kpi.comsys.io8313.labs1_2.parts.GeneralFragment;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private GeneralFragment generalFragment;
     private PieAndGraphFragment pieAndGraphFragment;
+    private BooksFragment booksFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
         generalFragment = new GeneralFragment();
         pieAndGraphFragment = new PieAndGraphFragment();
+        booksFragment = new BooksFragment();
 
         ViewPageAdapter viewPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), 0);
 
         viewPageAdapter.addFragment(generalFragment, "Home");
         viewPageAdapter.addFragment(pieAndGraphFragment,"Pie and graph");
+        viewPageAdapter.addFragment(booksFragment, "Books");
 
         viewPager.setAdapter(viewPageAdapter);
     }
