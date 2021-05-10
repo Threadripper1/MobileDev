@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".BookAddFormActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="35dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/titleTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter a title of the new book"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/subtitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Subtitle"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/subtitleTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Enter a subtitle of the new book"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/priceTextEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Enter a price of the new book"
+                android:inputType="textPersonName"
+                android:numeric="signed|integer"
+                android:phoneNumber="true" />
+
+            <Button
+                android:id="@+id/addBookButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/border"
+                android:paddingVertical="25dp"
+                android:paddingHorizontal="40dp"
+                android:text="Add book"
+                app:backgroundTint="#6586CA" />
+
+            <TextView
+                android:id="@+id/logTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Book Log"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/logView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+</ScrollView>
