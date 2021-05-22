@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-package ua.kpi.comsys.io8313.mobiledev.resource.Image;
-
-public class ImageGrid {
-}
-=======
 package ua.kpi.comsys.io8313.mobiledev.resource.Image;
 
 import android.net.Uri;
@@ -64,4 +58,3 @@ public class ImageGrid {
         return images.size();
     }
 }
->>>>>>> f951f76 (lab5)

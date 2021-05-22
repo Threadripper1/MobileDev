@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-package ua.kpi.comsys.io8313.mobiledev.resource.Image;
-
-public class ImageSettings {
-}
-=======
 package ua.kpi.comsys.io8313.mobiledev.resource.Image;
 
 import android.app.Activity;
@@ -97,4 +91,3 @@ public class ImageSettings extends RecyclerView.Adapter<ImageSettings.ViewHolder
         return imageGrid.size();
     }
 }
->>>>>>> f951f76 (lab5)

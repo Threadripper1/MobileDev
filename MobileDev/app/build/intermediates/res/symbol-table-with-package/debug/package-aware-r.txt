@@ -1665,6 +1665,8 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable item_divider_horizontal
+drawable item_divider_vertical
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1895,6 +1897,15 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id grid_image1
+id grid_image2
+id grid_image3
+id grid_image4
+id grid_image5
+id grid_image6
+id grid_image7
+id grid_image8
+id grid_image9
 id group_divider
 id groups
 id guideline
@@ -1909,6 +1920,8 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imagePickerButton
+id imageRecycler
 id info
 id invisible
 id inward
@@ -1929,6 +1942,9 @@ id line3
 id lineChartButton
 id line_chart
 id linear
+id linear_layout1
+id linear_layout2
+id linear_layout3
 id listMode
 id list_item
 id logTextView
@@ -1990,6 +2006,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id navigation_header_container
 id never
+id noImagesYetTextView
 id noScroll
 id none
 id normal
@@ -2236,7 +2253,9 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_images
 layout general_fragment
+layout image_list_item
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider

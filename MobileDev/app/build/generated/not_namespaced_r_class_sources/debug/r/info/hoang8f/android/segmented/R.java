@@ -33,8 +33,8 @@ public final class R {
         private drawable() {}
 
         public static final int button_text_color = 0x7f070068;
-        public static final int radio_checked = 0x7f070099;
-        public static final int radio_unchecked = 0x7f07009a;
+        public static final int radio_checked = 0x7f07009b;
+        public static final int radio_unchecked = 0x7f07009c;
     }
     public static final class string {
         private string() {}

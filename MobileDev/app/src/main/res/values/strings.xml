@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 <resources>
     <string name="app_name">MobileDevelopment</string>
     <string name="greeting">Коломієць Дмитро\nГрупа ІО-83\nЗК ІО-8313</string>
 </resources>
-=======
-<resources>
-    <string name="app_name">MobileDevelopment</string>
-    <string name="greeting">Коломієць Дмитро\nГрупа ІО-83\nЗК ІО-8313</string>
-</resources>
->>>>>>> f951f76 (lab5)

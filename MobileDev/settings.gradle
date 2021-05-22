@@ -1,7 +1,2 @@
-<<<<<<< HEAD
 include ':app'
 rootProject.name='MobileDev'
-=======
-include ':app'
-rootProject.name='MobileDev'
->>>>>>> f951f76 (lab5)

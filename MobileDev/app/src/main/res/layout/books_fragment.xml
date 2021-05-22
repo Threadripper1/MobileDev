@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -42,49 +41,4 @@
             app:rippleColor="#E8E7E7"
             />
 
-=======
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".parts.BooksFragment">
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/search_book_bar"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="35dp"
-        android:hint="Search book"
-        android:ems="10"
-        android:padding="12dp"
-        android:inputType="textPersonName"
-        android:drawableLeft="@drawable/ic_baseline_search_24"
-        android:drawableStart="@drawable/ic_baseline_search_24"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/booksListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:background="#FFFFFF"
-            android:elevation="0dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/ic_baseline_add_24"
-            android:tint="@android:color/white"
-            app:backgroundTint="#67A5D6"
-            app:rippleColor="#E8E7E7"
-            />
-
->>>>>>> f951f76 (lab5)
 </FrameLayout>
