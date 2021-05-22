@@ -55,6 +55,7 @@ public class BooksFragment extends Fragment implements SettingsBook.OnBookListen
 
         @Override
         public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            filteredBookList = settingsBook.getActualFilteredList();
             int adapterPosition = viewHolder.getAdapterPosition();
             Toast.makeText(getContext(), String.format("%s book was removed successfully",
                     bookList.get(adapterPosition).getTitle()), Toast.LENGTH_LONG).show();

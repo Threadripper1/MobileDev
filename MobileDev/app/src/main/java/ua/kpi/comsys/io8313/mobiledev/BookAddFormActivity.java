@@ -47,18 +47,19 @@ public class BookAddFormActivity extends AppCompatActivity {
             String subtitle = subtitleTextEdit.getText().toString();
             String price = priceTextEdit.getText().toString();
 
-            if (fieldAreValid(title, subtitle, price));
-            Book book = new Book(title, subtitle, "", price, "");
-            BooksFragment.addToBookList(book);
-            titleTextEdit.setText("");
-            subtitleTextEdit.setText("");
-            priceTextEdit.setText("");
-            logBooksList.add(book);
-            logBooks.append(notifyLogBookList());
-            Toast.makeText(getApplicationContext(),
-                    String.format("%s was successfully added to the your book list", book.getTitle()),
-                    Toast.LENGTH_LONG).show();
-            addButton.setFocusable(true);
+            if (fieldAreValid(title, subtitle, price)) {
+                Book book = new Book(title, subtitle, "", price, "");
+                BooksFragment.addToBookList(book);
+                titleTextEdit.setText("");
+                subtitleTextEdit.setText("");
+                priceTextEdit.setText("");
+                logBooksList.add(book);
+                logBooks.append(notifyLogBookList());
+                Toast.makeText(getApplicationContext(),
+                        String.format("%s was successfully added to the your book list", book.getTitle()),
+                        Toast.LENGTH_LONG).show();
+                addButton.setFocusable(true);
+            }
         });
     }
 
@@ -85,7 +86,7 @@ public class BookAddFormActivity extends AppCompatActivity {
         }
 
         try {
-            parsedPrice = Integer.parseInt(price);
+            parsedPrice = Float.parseFloat(price);
         } catch (NumberFormatException e) {
             Log.e(TAG, "cannot parse the price: "+e.getMessage());
             Toast.makeText(getApplicationContext(),

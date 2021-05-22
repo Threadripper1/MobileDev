@@ -29,14 +29,15 @@ public class SettingsBook extends RecyclerView.Adapter<SettingsBook.BookViewHold
     private List<Book> filteredBookList;
     private OnBookListener onBookListener;
 
+    public List<Book> getActualFilteredList(){
+        return filteredBookList;
+    }
+
     public SettingsBook(Context context, List<Book> bookList, OnBookListener onBookListener) {
         this.bookList = bookList;
         this.inflater = LayoutInflater.from(context);
         this.onBookListener = onBookListener;
-    }
-
-    public List<Book> getActualFilteredList(){
-        return filteredBookList;
+        this.filteredBookList = bookList;
     }
 
     @NonNull
@@ -48,7 +49,7 @@ public class SettingsBook extends RecyclerView.Adapter<SettingsBook.BookViewHold
 
     @Override
     public void onBindViewHolder(@NonNull SettingsBook.BookViewHolder holder, int position) {
-        Book book = bookList.get(position);
+        Book book = filteredBookList.get(position);
         if (!book.getImage().equals("")) {
             try {
                 InputStream ims = inflater.getContext().getAssets().open(
@@ -68,7 +69,7 @@ public class SettingsBook extends RecyclerView.Adapter<SettingsBook.BookViewHold
 
     @Override
     public int getItemCount() {
-        return bookList.size();
+        return filteredBookList.size();
     }
 
     public static class BookViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -113,7 +114,7 @@ public class SettingsBook extends RecyclerView.Adapter<SettingsBook.BookViewHold
                             fltBookList.add(book);
                         }
                     }
-                    filteredBookList= fltBookList;
+                    filteredBookList = fltBookList;
                 }
                 FilterResults filterResults = new FilterResults();
                 Log.d(TAG, "filteredBookList is empty: " + filteredBookList);
@@ -124,6 +125,7 @@ public class SettingsBook extends RecyclerView.Adapter<SettingsBook.BookViewHold
             @Override
             protected void publishResults(CharSequence sequence, FilterResults results) {
                 filteredBookList = (List<Book>) results.values;
+                System.out.println(filteredBookList);
                 notifyDataSetChanged();
             }
         };
